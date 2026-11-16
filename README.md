@@ -1,2 +1,2 @@
 # Steam-Reviews-Spark
-Spark analysis of 113M+ Steam reviews: which games, playtimes, years and languages have the most negative recommendations, and which words mark negative reviews.
+PySpark analysis of 113.9M Steam reviews (about 40 GB) that looks for patterns in negative recommendations. It ranks games with 1,000+ reviews by negative share and compares negative share across playtime at review, review year and language. It also finds the English words that show up far more often in negative reviews than in positive ones. The notebook runs entirely in Spark, with only aggregated tables going to pandas for the charts.
